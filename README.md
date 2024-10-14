@@ -7,7 +7,7 @@
 - **Bar Melinarskiy**  
   *Student number:* 2482975  
 - **Sofia Bianchini**  
-  *Student number:* (7273746)
+  *Student number:* 7273746
 
 **Date:** October 14, 2024
 
