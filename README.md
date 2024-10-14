@@ -1,11 +1,18 @@
 # DIS-Assignment
- Data intensive systems (INFOMDIS) Assignment 2024
+**Data Intensive Systems (INFOMDIS) Assignment 2024**
 
-Student 1: Alex Francis, student number: 2695634
+## Students
+- **Alex Francis**  
+  *Student number:* 2695634  
+- **Bar Melinarskiy**  
+  *Student number:* 2482975  
+- **Sofia Bianchini**  
+  *Student number:* (To be added)
 
-Student 2: Bar Melinarskiy, student number: 2482975
+**Date:** October 14, 2024
 
-Student 3: Sofia Bianchini, student number: 
+## Solution Description
 
-Date: October 14, 2024
-"""
+
+## How to run?
+
