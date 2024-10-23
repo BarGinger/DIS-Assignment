@@ -78,3 +78,26 @@ df_final.select('Client1', 'Client2', 'duration_DDHHMM', 'community_id', 'commun
 # Show the list of community members as tuples
 community_members.show()
 
+
+# Create the list of lists of tuples for communities
+communities = []
+
+# Group by community_id and collect the edges (Client1, Client2, duration_DDHHMM)
+grouped_data = df_final.groupBy("community_id").agg(
+    collect_list(col("Client1")).alias("Client1"),
+    collect_list(col("Client2")).alias("Client2"),
+    collect_list(col("duration_DDHHMM")).alias("durations")
+).collect()
+
+# Iterate through each row in grouped_data
+for row in grouped_data:
+    community_id = row['community_id']  # Access community_id
+    community_tuples = []
+    for client1, client2, duration in zip(row['Client1'], row['Client2'], row['durations']):
+        community_tuples.append((client1, client2, duration))  # Create the tuple for each edge
+    communities.append(community_tuples)
+
+# Print the formatted output for verification
+for idx, community in enumerate(communities, start=1):
+    print(f"Community {idx}: {community}")
+
