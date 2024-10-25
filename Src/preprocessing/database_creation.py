@@ -36,7 +36,7 @@ def load_csv_to_neo4j(csv_file_path):
                 )
 
 # Path to your CSV file
-csv_file_path = "adjusted_phone_calls.csv"
+csv_file_path = "../../Data/adjusted_phone_calls.csv"
 
 # Load data from CSV and send to Neo4j
 load_csv_to_neo4j(csv_file_path)

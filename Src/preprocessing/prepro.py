@@ -18,7 +18,7 @@ spark = SparkSession.builder \
 # Set a checkpoint directory for Spark
 spark.sparkContext.setCheckpointDir("/tmp/spark-checkpoints")
 
-file_path = 'adjusted_phone_calls.csv'
+file_path = '../../Data/adjusted_phone_calls.csv'
 df = spark.read.csv(file_path, header=True, inferSchema=True)
 
 # Convert YYMMDDHHMM to a proper datetime object
